@@ -1,0 +1,65 @@
+/*** Cookies ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper {
+    position: fixed;
+    z-index: 9999;
+    bottom: 30px;
+    right: -370px;
+    max-width: 345px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper.show {
+    right: 20px;
+  }
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  header h2 {
+    color: #091E3E;
+    font-weight: 350;
+  }
+  .wrapper .data p {
+    color: #000000;
+    font-size: 16px;
+  }
+  .wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .button {
+    border:#091E3E;
+    color: #ffffff;
+    padding: 10px 0;
+    border-radius: 4px;
+    background: #091E3E;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .buttons #acceptBtn:hover {
+    background-color: #091E3E;
+  }
+  #declineBtn {
+    border: 3px solid #091E3E;
+    background-color: #ffffff;
+    color: #091E3E;
+  }
+  #declineBtn:hover {
+    background-color: #091E3E;
+    color: #ffffff;
+  }
