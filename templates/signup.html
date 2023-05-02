@@ -1,0 +1,73 @@
+{% load static %}
+
+{% block title %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Login/Signup</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda One">
+<link rel="stylesheet" href="{% static 'css/styles-login.css' %}">
+<link href="{% static 'img/checked.png' %}" rel="icon"> 
+{% endblock %}
+
+{% block content %}
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="Login" checked><label for="tab-1" class="tab">Login</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-up-htm">
+                    <form method = "post">
+                            {% csrf_token %}
+                        <div class="group">
+                            <br>
+                            <label for="email" class="label">Mail ID</label>
+                            {{form.mail_id}}
+                        </div>
+                        <div class="group">
+                            <label for="password" class="label">Password</label>
+                            {{form.password}}   
+                        </div>
+                        <div class="group">
+                            <label for="confirm_password" class="label">Confirm Password</label>
+                            <div class="col-md-6">
+                            {{ form.confirm_password}}
+                            </div>
+                            <br>
+                        </div>
+                        <div class="group">
+                            <a href = 'home' button type="submit" class="button" value="SignUp" name="SignUp">SignUp</button>
+                        </div>
+                        <div class="br"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already a Member?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="Login-htm">
+                    <form method="post">
+                        {% csrf_token%}
+                    <br><br>   
+                    <div class="group">
+                        <label for="user" class="label">Username / Mail ID</label>
+                        {{form1.username}} 
+                    </div>
+                    <div class="group">
+                        <label for="pwd" class="label">Password</label>
+                        {{form1.verify_password}}
+                        <br>
+                    </div>
+                    <div class="group">
+                        <br><br><br><br>
+                        <a href = 'home' button type="submit" class="button" value="Login" name="Login">Login</button>
+                    </div>
+                    <div class="br"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-2">Don't have an account?</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
