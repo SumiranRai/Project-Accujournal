@@ -12,7 +12,7 @@ On a sidenote, if you would like to know more about the project, I have attached
 You are gladly welcome to give a look at it.
 
 [Technologies used - Python for backend, web scraping, collecting data and building the search engine, MongoDB as a database for storing data, 
-Django as the web framework and HTML, CSS, SCSS, Javascript for building the frontend.]
+Django as the web framework and HTML, CSS, SCSS, Javascript for building the frontend. Hosted on campus LAN using system's IP address]
 
 Thank you very much.
 
