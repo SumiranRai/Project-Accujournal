@@ -1,8 +1,8 @@
 # Project-Accujournal
 A search engine website for indexed authenticated research journals with querying facilities.
 
-Technologies used - Python for backend, web scraping, collecting data and building the search engine, MongoDB as a database for storing data, 
-Django as the web framework and HTML, CSS, SCSS, Javascript for building the frontend.
+[Technologies used - Python for backend, web scraping, collecting data and building the search engine, MongoDB as a database for storing data, 
+Django as the web framework and HTML, CSS, SCSS, Javascript for building the frontend.]
 
 This was a project I did in my final semester of my B.Sc. Computer Science Degree along with Brother Chiruhas Bonam.
 We were mentored by Dr. K. Vengata Krishnan Sir throughout the project.
